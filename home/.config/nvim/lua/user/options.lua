@@ -55,6 +55,11 @@ local opts = {
 		- "2", -- I'm not in gradeschool anymore
 }
 
+vim.g.overridden_opts = {
+  shiftwidth = 2,
+  tabstop = 2
+}
+
 return {
 	setup = function()
 		require("lcl.options")
