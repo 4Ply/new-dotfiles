@@ -289,6 +289,13 @@ local mappings = {
 	},
 	{
 		mode = { "n", "v", "i" },
+		"<D-s>",
+		vim.cmd.up,
+		prefix = P.misc,
+		description = "Save file",
+	},
+	{
+		mode = { "n", "v", "i" },
 		"<C-s>",
 		vim.cmd.up,
 		prefix = P.misc,
