@@ -54,14 +54,15 @@ configs.setup({
 		},
 	},
 	textsubjects = {
-		enable = true,
-		disable = disable,
-		prev_selection = ",",
-		keymaps = {
-			["."] = "textsubjects-smart",
-			[";"] = "textsubjects-container-outer",
-			["i;"] = "textsubjects-container-inner",
-		},
+			enable = true,
+			disable = disable,
+			prev_selection = "<D-W>",
+			keymaps = {
+					["."] = "textsubjects-smart",
+					["<D-w>"] = "textsubjects-smart",
+					[";"] = "textsubjects-container-outer",
+					["i;"] = "textsubjects-container-inner",
+			},
 	},
 })
 

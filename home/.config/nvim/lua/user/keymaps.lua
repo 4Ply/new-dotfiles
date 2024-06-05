@@ -124,6 +124,16 @@ end
 
 local mappings = {
 	{
+		mode = { "n", "i" },
+    "<D-w>",
+    function()
+			vim.api.nvim_feedkeys("v", "nx", false)
+			vim.api.nvim_feedkeys(".", "v", false)
+		end,
+		prefix = P.misc,
+		description = "How to quit vim",
+	},
+	{
 		mode = { "n", "v" },
 		"<leader>Q",
 		[[<CMD>qa! <CR>]],
